@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="C:\Users\disha\OneDrive\Desktop\bharat intern\port\style.css">
+    <link rel="stylesheet" href="C:\Users\disha\OneDrive\Desktop\bharat intern\port\mediaqueries.css">
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Disha Hebbar</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+        <nav id="hamburger-nav">
+        <div class="logo">Disha Hebbar</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#contact"onclick="toggleMenu()" >Contact</a></li>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\circles.jpg" alt="profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Disha Hebbar</h1>
+            <p class="section__text__p2">Frontend Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./disha.pdf')">
+            Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info</button>
+        </div>
+        <div id="socials-container">
+            <img src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/disha-hebbar-01158926a/'">
+            <img src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/Disha-Hebbar'">
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title"> About Me</h1>
+        <div class="section-container">
+            <div class="about-details-containers">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\experience.png" alt="experience icon" class="icon">
+                        <h3>Projects</h3>
+                        <p>
+                            <li>Blood-Buddy App</li>
+                            <li>Clinic Management System</li>
+                            <li>Car parking Management System</li>
+                        </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p> I am a B.E graduate in <span>Information Science and Engineering </span>graduacating in 2023.</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class= "lineheight"><strong> My name is Disha Hebbar, Currently persuing my B.E in Information Science and Engineering, graduacating in 2024. I'm Frontend Developer,who always ready for adapt and learn new things. I am very analytical, creative, and service oriented. Throughout my internships, academics, and volunteer work, I have been able to really expand my knowledge of the upcoming technologies. </strong>    
+                        </p>
+                </div>
+              </div>
+            </div>
+<img src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Technical Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C++</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Soft Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Problem Solving </h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Communication</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Time Management</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Team Work</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'"/>
+      </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:dishahebbar12@gmail.com">dishahebbar12@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="C:\Users\disha\OneDrive\Desktop\bharat intern\port\images\linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/disha-hebbar-01158926a/">Disha Hebbar</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>
