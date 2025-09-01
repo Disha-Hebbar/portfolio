@@ -1,75 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Disha Hebbar | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mediaqueries.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #2e026d, #000000);
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #c084fc;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #c084fc;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #e9d5ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.7);
+      margin-top: 40px;
+    }
+
+    a {
+      color: #a78bfa;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation -->
+
   <header>
+    <h1>Disha Hebbar</h1>
+    <p>Technical Engineer | Web Developer | Full Stack Enthusiast</p>
     <nav>
-      <h1 class="logo">Disha Hebbar</h1>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h2>Hello, I'm <span>Disha Hebbar</span></h2>
-      <p>Aspiring Web Developer passionate about creating clean and user-friendly websites.</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am an Information Science & Engineering student with experience in frontend 
-      and backend development. Skilled in HTML, CSS, JavaScript, PHP, Python, and SQL. 
-      I enjoy building modern, responsive websites and applications.
+      I am an Information Science and Engineering graduate with experience in 
+      frontend and backend development. Currently working as a Technical Engineer 
+      at UnifyCx, I enjoy building responsive websites, solving technical issues, 
+      and contributing to impactful projects.
     </p>
   </section>
 
-  <!-- Projects Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p><strong>Frontend:</strong> HTML, CSS, JavaScript, Tailwind CSS</p>
+    <p><strong>Backend:</strong> PHP, SQL, Python, Java</p>
+    <p><strong>CMS & Tools:</strong> WordPress, Website Builders, Google Workspace</p>
+  </section>
+
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
+    <div class="projects">
+      <div class="card">
         <h3>AI Yoga Gesture Detection</h3>
-        <p>AI model for yoga posture detection using ML and CV.</p>
+        <p>AI-based posture identification system using TensorFlow and MediaPipe.</p>
       </div>
-      <div class="project-card">
+      <div class="card">
         <h3>Online Flower Store</h3>
-        <p>E-commerce website built with PHP, SQL, and Bootstrap.</p>
+        <p>Full-stack e-commerce website with PHP, SQL, and JavaScript.</p>
       </div>
-      <div class="project-card">
+      <div class="card">
         <h3>Clinic Management System</h3>
-        <p>Web app to manage clinic appointments and patients.</p>
+        <p>Multi-role web application for doctors, patients, and administrators.</p>
+      </div>
+      <div class="card">
+        <h3>Blood-Buddy Mobile App</h3>
+        <p>Android app to connect donors, patients, and hospitals in emergencies.</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact Me</h2>
+    <h2>Contact</h2>
     <p>Email: <a href="mailto:dishahebbar12@gmail.com">dishahebbar12@gmail.com</a></p>
     <p>Phone: +91 9353682769</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/disha-hebbar" target="_blank">linkedin.com/in/disha-hebbar</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/disha-hebbar" target="_blank">linkedin.com/in/disha-hebbar</a></p>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Disha Hebbar | All Rights Reserved</p>
+    <p>© 2025 Disha Hebbar | Portfolio</p>
   </footer>
+
 </body>
 </html>
