@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disha Hebbar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
-<body class="bg-gray-50 text-gray-900">
-
+<body>
   <!-- Navbar -->
-  <nav class="bg-white shadow p-4">
-    <div class="container mx-auto flex justify-between">
-      <h1 class="font-bold text-xl">Disha Hebbar</h1>
-      <div class="space-x-6">
-        <a href="index.html" class="hover:text-blue-600">Home</a>
-        <a href="about.html" class="hover:text-blue-600">About</a>
-        <a href="projects.html" class="hover:text-blue-600">Projects</a>
-        <a href="contact.html" class="hover:text-blue-600">Contact</a>
-      </div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Disha Hebbar</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <h1>Hi, I'm <span>Disha Hebbar</span></h1>
+      <p>Aspiring Web Developer | Frontend & Backend Enthusiast</p>
+      <a href="#projects" class="btn">View My Work</a>
     </div>
-  </nav>
+  </section>
 
   <!-- About Section -->
-  <section id="about" class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl font-bold mb-4">About Me</h2>
-          <p class="max-w-2xl mx-auto text-gray-600">
-            I'm passionate about creating digital experiences that make a difference.
-          </p>
-        </div>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am passionate about creating interactive and user-friendly web applications. 
+      Skilled in HTML, CSS, JavaScript, PHP, and SQL, with experience in both 
+      frontend and backend development.
+    </p>
+  </section>
 
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 class="text-2xl font-semibold mb-6">My Story</h3>
-            <p class="text-gray-600 mb-4">
-              With experience in web development, I've worked with startups and established companies to bring their digital visions to life.
-            </p>
-            <p class="text-gray-600">
-              I believe great software is not just about clean code, but about understanding user needs and creating delightful solutions.
-            </p>
-
-            <div class="grid md:grid-cols-3 gap-6 mt-8">
-              <div class="p-6 text-center rounded-lg shadow bg-gray-50">
-                <h4 class="font-semibold mb-2">Development</h4>
-                <p class="text-sm text-gray-500">Clean, efficient code with modern best practices</p>
-              </div>
-              <div class="p-6 text-center rounded-lg shadow bg-gray-50">
-                <h4 class="font-semibold mb-2">Design</h4>
-                <p class="text-sm text-gray-500">User-centered design with attention to detail</p>
-              </div>
-              <div class="p-6 text-center rounded-lg shadow bg-gray-50">
-                <h4 class="font-semibold mb-2">Performance</h4>
-                <p class="text-sm text-gray-500">Optimized solutions for great user experience</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="lg:order-first">
-            <img src="https://images.unsplash.com/photo-1640109341881-1cd3eaf50909?ixlib=rb-4.1.0&q=80&w=1080" 
-                 alt="Office setup"
-                 class="w-full h-96 object-cover rounded-lg shadow-lg"/>
-          </div>
-        </div>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>AI Yoga Gesture Detection</h3>
+        <p>Deep learning project that detects yoga poses in real-time.</p>
+      </div>
+      <div class="project-card">
+        <h3>Online Flower Store</h3>
+        <p>E-commerce website built using PHP, SQL, and Bootstrap.</p>
+      </div>
+      <div class="project-card">
+        <h3>Clinic Management System</h3>
+        <p>Web app for managing appointments and patient data.</p>
       </div>
     </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:dishahebbar12@gmail.com">dishahebbar12@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/disha-hebbar" target="_blank">linkedin.com/in/disha-hebbar</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Disha Hebbar | Portfolio</p>
+  </footer>
 </body>
 </html>
