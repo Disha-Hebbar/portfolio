@@ -5,8 +5,8 @@ body {
   background: linear-gradient(135deg, #2e026d, #000000);
   color: white;
   line-height: 1.6;
-  position: relative;
   overflow-x: hidden;
+  position: relative;
 }
 
 header {
@@ -73,15 +73,15 @@ footer {
   padding: 20px;
   background: rgba(0,0,0,0.7);
   margin-top: 40px;
-  z-index: 10;
   position: relative;
+  z-index: 10;
 }
 
 a {
   color: #a78bfa;
 }
 
-/* Animated Dots Background */
+/* Floating Background Dots */
 .background {
   position: fixed;
   width: 100%;
@@ -94,8 +94,8 @@ a {
 
 .dot {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background: #a78bfa;
   border-radius: 50%;
   opacity: 0.7;
@@ -112,4 +112,19 @@ a {
   0% { transform: translateY(0) translateX(0); }
   50% { transform: translateY(-100px) translateX(50px); }
   100% { transform: translateY(0) translateX(0); }
+}
+
+/* Cursor Dot */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #c084fc;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+  z-index: 1000;
 }
