@@ -119,13 +119,19 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 15px;
-  height: 15px;
+  width: 10px;        /* smaller size */
+  height: 10px;
   border-radius: 50%;
-  background: #c084fc;
+  background: #c084fc;  /* bright purple */
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 1000;
+
+  /* glowing aura effect */
+  box-shadow: 0 0 10px #c084fc, 
+              0 0 20px #a855f7, 
+              0 0 40px #9333ea;
 }
+
 
 
