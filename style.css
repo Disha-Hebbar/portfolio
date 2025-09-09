@@ -1,4 +1,6 @@
-/* General Styles */
+/* ===========================
+   General Styles
+=========================== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -12,7 +14,7 @@ body {
 header {
   padding: 20px;
   text-align: center;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 10;
 }
@@ -51,7 +53,22 @@ h2 {
   text-align: center;
 }
 
-/* Projects section wider than others */
+a {
+  color: #a78bfa;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 40px;
+  position: relative;
+  z-index: 10;
+}
+
+/* ===========================
+   Projects Section
+=========================== */
 #projects {
   max-width: 1200px;
 }
@@ -62,25 +79,18 @@ h2 {
   gap: 20px;
 }
 
-.card p {
-  text-indent: 2em;
-  text-align: justify;
-}
-
-/* Project cards */
 .card {
   background: rgba(255, 255, 255, 0.08);
   padding: 25px;
   border-radius: 12px;
   z-index: 20;
 
-  /* hidden state for animation */
+  /* animation: hidden by default */
   opacity: 0;
   transform: translateY(30px);
   transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.3s ease;
 }
 
-/* When visible */
 .card.show {
   opacity: 1;
   transform: translateY(0);
@@ -92,38 +102,22 @@ h2 {
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* Headings */
 .card h3 {
   margin-top: 0;
   margin-bottom: 12px;
   color: #e9d5ff;
 }
 
-/* Paragraphs */
 .card p {
   text-indent: 2em;
   text-align: justify;
-  line-height: 1.8; /* better readability */
+  line-height: 1.8;
   font-size: 0.95rem;
 }
 
-
-
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: rgba(0,0,0,0.7);
-  margin-top: 40px;
-  position: relative;
-  z-index: 10;
-}
-
-a {
-  color: #a78bfa;
-}
-
-/* Floating Background Dots */
+/* ===========================
+   Floating Background Dots
+=========================== */
 .background {
   position: fixed;
   width: 100%;
@@ -156,38 +150,31 @@ a {
   100% { transform: translateY(0) translateX(0); }
 }
 
-/* Cursor Dot */
+/* ===========================
+   Cursor Dot
+=========================== */
 .cursor-dot {
   position: fixed;
   top: 0;
   left: 0;
-  width: 10px;        /* smaller size */
+  width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #c084fc;  /* bright purple */
+  background: #c084fc;
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 1000;
 
-  /* glowing aura effect */
   box-shadow: 0 0 10px #c084fc, 
               0 0 20px #a855f7, 
               0 0 40px #9333ea;
 }
 
-/* Responsive layout for mobile screens */
+/* ===========================
+   Responsive Layout
+=========================== */
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: 1fr;
   }
 }
-
-
-
-
-
-
-
-
-
-
