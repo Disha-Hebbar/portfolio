@@ -10,9 +10,9 @@ document.addEventListener("mousemove", (e) => {
   mouseY = e.clientY;
 });
 
-// Animate the dot (lerp movement)
+// Animate cursor dot
 function animate() {
-  dotX += (mouseX - dotX) * 0.1; // 0.1 = smoothness (lower = slower follow)
+  dotX += (mouseX - dotX) * 0.1;
   dotY += (mouseY - dotY) * 0.1;
 
   cursorDot.style.transform = `translate(${dotX}px, ${dotY}px)`;
@@ -20,3 +20,25 @@ function animate() {
   requestAnimationFrame(animate);
 }
 animate();
+
+// ================================
+// Fade-in on scroll for project cards
+// ================================
+const cards = document.querySelectorAll('.card');
+
+function revealCards() {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  cards.forEach((card, index) => {
+    const cardTop = card.getBoundingClientRect().top;
+
+    if (cardTop < triggerBottom && !card.classList.contains('show')) {
+      setTimeout(() => {
+        card.classList.add('show');
+      }, index * 150);
+    }
+  });
+}
+
+window.addEventListener('scroll', revealCards);
+window.addEventListener('load', revealCards);
