@@ -56,13 +56,15 @@ h2 {
   max-width: 1200px;
 }
 
-/* Projects grid */
-/* Projects grid */
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-  gap: 40px; /* more space between cards */
-  align-items: start;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card p {
+  text-indent: 2em;
+  text-align: justify;
 }
 
 /* Project cards */
@@ -182,6 +184,7 @@ a {
     grid-template-columns: 1fr; /* 1 column on tablets & mobile */
   }
 }
+
 
 
 
