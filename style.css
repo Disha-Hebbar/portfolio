@@ -51,27 +51,33 @@ h2 {
   text-align: center;
 }
 
+/* Projects section wider than others */
+#projects {
+  max-width: 1200px;
+}
+
+/* Projects grid */
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 projects in a row */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns on desktop */
   gap: 20px;
 }
 
+/* Project cards */
 .card {
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 10px;
 }
 
-.card p {
-  text-indent: 2em; /* indentation for description */
-  text-align: justify; /* make text aligned neatly */
-}
-
-
 .card h3 {
   margin-top: 0;
   color: #e9d5ff;
+}
+
+.card p {
+  text-indent: 2em;
+  text-align: justify;
 }
 
 footer {
@@ -139,6 +145,12 @@ a {
               0 0 40px #9333ea;
 }
 
+/* Responsive layout for mobile screens */
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr; /* 1 column on tablets & mobile */
+  }
+}
 
 
 
