@@ -86,7 +86,7 @@ footer {
   z-index: 20;
 
   /* animation: hidden by default */
-  opacity: 0;
+  opacity: 1;
   transform: translateY(30px);
   transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.3s ease;
 }
@@ -178,3 +178,4 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
