@@ -20,26 +20,3 @@ function animate() {
   requestAnimationFrame(animate);
 }
 animate();
-
-// ================================
-// Fade-in on scroll for project cards
-// ================================
-const cards = document.querySelectorAll('.card');
-
-function revealCards() {
-  const triggerBottom = window.innerHeight * 0.85; // 85% viewport height
-
-  cards.forEach((card, index) => {
-    const cardTop = card.getBoundingClientRect().top;
-
-    if (cardTop < triggerBottom) {
-      // Add stagger effect with delay
-      setTimeout(() => {
-        card.classList.add('show');
-      }, index * 150); // delay each card by 150ms
-    }
-  });
-}
-
-window.addEventListener('scroll', revealCards);
-window.addEventListener('load', revealCards);
