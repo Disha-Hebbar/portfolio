@@ -70,26 +70,30 @@ footer {
 skills
 =======================*/
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+#skills {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;  /* center align text */
 }
 
-.skill-card {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 15px;
-  border-radius: 10px;
+#skills h2 {
   text-align: center;
-  font-weight: bold;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #c084fc;
+  margin-bottom: 30px;
 }
 
-.skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px rgba(192, 132, 252, 0.6);
+.skills-list p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #e5e5e5;
 }
+
+.skills-list strong {
+  color: #e9d5ff;
+}
+
 
 
 /* ===========================
@@ -261,6 +265,7 @@ skills
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
