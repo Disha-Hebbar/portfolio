@@ -72,26 +72,46 @@ skills
 
 #skills {
   padding: 60px 20px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
-  text-align: center;  /* center align text */
+  text-align: center;
 }
 
 #skills h2 {
   text-align: center;
   color: #c084fc;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  font-size: 2rem;
 }
 
-.skills-list p {
-  margin-bottom: 15px;
-  line-height: 1.8;
-  font-size: 1rem;
-  color: #e5e5e5;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
 }
 
-.skills-list strong {
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px #c084fc, 0 0 30px #a855f7;
+}
+
+.skill-card h3 {
   color: #e9d5ff;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  color: #e5e5e5;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 
@@ -265,6 +285,7 @@ skills
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
