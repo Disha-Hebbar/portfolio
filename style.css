@@ -268,7 +268,7 @@ skills
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  
+  background: #c084fc;
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 1000;
@@ -286,6 +286,7 @@ skills
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
