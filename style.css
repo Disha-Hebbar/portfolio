@@ -5,6 +5,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #004d40, #00796b, #00bfa5);
+  color: #e0f2f1; /* light teal-grey for readability */
   color: white;
   line-height: 1.6;
   overflow-x: hidden;
@@ -48,13 +49,24 @@ section {
 }
 
 h2 {
-  color: #c084fc;
   margin-bottom: 20px;
   text-align: center;
 }
 
+h1, h2, h3 {
+  color: #a7ffeb; /* bright mint for headings */
+}
+
 a {
   color: #a78bfa;
+  color: #5ef1d8;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #5ef1d8, 0 0 20px #00ffc3;
 }
 
 
@@ -256,6 +268,22 @@ skills
   background: #a855f7;
 }
 
+.btn {
+  background: transparent;
+  border: 1.5px solid #5ef1d8;
+  color: #5ef1d8;
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #00bfa5;
+  color: white;
+  box-shadow: 0 0 15px #00ffc3;
+}
+
+
 
 
 /* ===========================
@@ -286,6 +314,7 @@ skills
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
