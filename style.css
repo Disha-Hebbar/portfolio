@@ -11,6 +11,7 @@ body {
   position: relative;
 }
 
+
 h2, h3, strong {
   color: #bae6fd;
 }
@@ -43,15 +44,26 @@ nav {
 }
 
 nav a {
-  color: #c084fc;
+  color: #38bdf8;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 6px;
+
+  /* Remove solid background */
+  background: none;   
+
+  /* Optional glow without box fill */
+  text-shadow: 0 0 8px #38bdf8, 0 0 15px #06b6d4;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
   color: #ffffff;
+  text-shadow: 0 0 15px #06b6d4, 0 0 25px #38bdf8;
 }
+
 
 section {
   padding: 60px 20px;
