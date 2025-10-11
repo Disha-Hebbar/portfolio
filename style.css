@@ -1,45 +1,100 @@
-/* ===========================
-   General Styles
-=========================== */
+/* ==========================
+   GENERAL STYLES
+========================== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #004d40, #00796b, #00bfa5);
-  color: #e0f2f1; /* light teal-grey for readability */
-  color: white;
+  color: #e0f2f1;
   line-height: 1.6;
   overflow-x: hidden;
   position: relative;
 }
 
+/* ==========================
+   HEADER & NAVBAR
+========================== */
 header {
-  padding: 20px;
+  padding: 40px 20px 20px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.15);
+  border-bottom: 1px solid rgba(126, 249, 216, 0.2);
   position: relative;
   z-index: 10;
 }
 
+/* Your Name */
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #a7ffeb;
+  text-shadow:
+    0 0 10px #00ffc3,
+    0 0 25px #00bfa5,
+    0 0 40px rgba(0, 255, 204, 0.3);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
-nav {
+header h1:hover {
+  transform: scale(1.03);
+  text-shadow:
+    0 0 15px #00ffc3,
+    0 0 35px #00bfa5,
+    0 0 50px #7ef9d8;
+}
+
+/* Tagline */
+header p {
   margin-top: 10px;
+  font-size: 1.1rem;
+  color: #b2dfdb;
+  text-shadow: 0 0 10px rgba(126, 249, 216, 0.3);
+}
+
+/* Navbar Links */
+nav {
+  margin-top: 25px;
 }
 
 nav a {
-  color: #c084fc;
+  color: #7ef9d8;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+  margin: 0 20px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  position: relative;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: #7ef9d8;
+  box-shadow: 0 0 10px #00ffc3;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: center;
 }
 
 nav a:hover {
   color: #ffffff;
+  text-shadow: 0 0 10px #00ffc3, 0 0 20px #7ef9d8;
 }
 
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+/* ==========================
+   SECTIONS
+========================== */
 section {
   padding: 60px 20px;
   max-width: 900px;
@@ -51,38 +106,16 @@ section {
 h2 {
   margin-bottom: 20px;
   text-align: center;
+  color: #a7ffeb;
 }
 
-h1, h2, h3 {
-  color: #a7ffeb; /* bright mint for headings */
+h3 {
+  color: #7ef9d8;
 }
 
-a {
-  color: #a78bfa;
-  color: #5ef1d8;
-  text-decoration: none;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-a:hover {
-  color: #ffffff;
-  text-shadow: 0 0 10px #5ef1d8, 0 0 20px #00ffc3;
-}
-
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
-  margin-top: 40px;
-  position: relative;
-  z-index: 10;
-}
-
-/* =====================
-skills
-=======================*/
-
+/* ==========================
+   SKILLS SECTION
+========================== */
 #skills {
   padding: 60px 20px;
   max-width: 1200px;
@@ -91,8 +124,7 @@ skills
 }
 
 #skills h2 {
-  text-align: center;
-  color: #c084fc;
+  color: #7ef9d8;
   margin-bottom: 40px;
   font-size: 2rem;
 }
@@ -113,33 +145,31 @@ skills
 
 .skill-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 0 15px #c084fc, 0 0 30px #a855f7;
+  box-shadow: 0 0 15px #7ef9d8, 0 0 30px #00ffc3;
 }
 
 .skill-card h3 {
-  color: #e9d5ff;
+  color: #a7ffeb;
   margin-bottom: 10px;
 }
 
 .skill-card p {
-  color: #e5e5e5;
+  color: #e0f2f1;
   line-height: 1.6;
   font-size: 0.95rem;
 }
 
-
-
-/* ===========================
-   Projects Section
-=========================== */
+/* ==========================
+   PROJECTS SECTION
+========================== */
 #projects {
   max-width: 1200px;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
 }
 
 .card {
@@ -147,8 +177,6 @@ skills
   padding: 25px;
   border-radius: 12px;
   z-index: 20;
-
-  /* animation: hidden by default */
   opacity: 1;
   transform: translateY(30px);
   transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.3s ease;
@@ -161,14 +189,13 @@ skills
 
 .card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 0 25px rgba(174, 0, 255, 0.8);
+  box-shadow: 0 0 25px #00ffc3, 0 0 50px rgba(0, 255, 204, 0.3);
   background: rgba(255, 255, 255, 0.12);
 }
 
 .card h3 {
   margin-top: 0;
-  margin-bottom: 12px;
-  color: #e9d5ff;
+  color: #a7ffeb;
 }
 
 .card p {
@@ -178,9 +205,62 @@ skills
   font-size: 0.95rem;
 }
 
-/* ===========================
-   Floating Background Dots
-=========================== */
+/* ==========================
+   CONTACT SECTION
+========================== */
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #00ffc3;
+}
+
+.contact-info p {
+  margin: 12px 0;
+  font-size: 1.1rem;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #00ffc3;
+}
+
+/* Resume Links */
+.resume-links {
+  margin-top: 20px;
+}
+
+.resume-links .btn {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1.5px solid #00ffc3;
+  background: transparent;
+  color: #7ef9d8;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.resume-links .btn:hover {
+  background: #00bfa5;
+  color: white;
+  box-shadow: 0 0 15px #00ffc3, 0 0 30px #7ef9d8;
+}
+
+/* ==========================
+   FLOATING BACKGROUND DOTS
+========================== */
 .background {
   position: fixed;
   width: 100%;
@@ -195,7 +275,7 @@ skills
   position: absolute;
   width: 8px;
   height: 8px;
-  background: #a78bfa;
+  background: #7ef9d8;
   border-radius: 50%;
   opacity: 0.7;
   animation: moveDots 20s linear infinite;
@@ -213,82 +293,9 @@ skills
   100% { transform: translateY(0) translateX(0); }
 }
 
-/* Contact Card Container */
-.contact-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  padding: 30px;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(192, 132, 252, 0.7);
-}
-
-/* Contact Info */
-.contact-info p {
-  margin: 12px 0;
-  font-size: 1.1rem;
-}
-
-.contact-info i {
-  margin-right: 10px;
-  color: #c084fc;
-}
-
-/* Resume Links */
-.resume-links {
-  margin-top: 20px;
-}
-
-.resume-links p {
-  margin-bottom: 10px;
-}
-
-.resume-links .btn {
-  display: inline-block;
-  margin: 8px;
-  padding: 10px 20px;
-  border-radius: 6px;
-  background: #c084fc;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.resume-links .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 15px #c084fc, 0 0 30px #a855f7;
-  background: #a855f7;
-}
-
-.btn {
-  background: transparent;
-  border: 1.5px solid #5ef1d8;
-  color: #5ef1d8;
-  border-radius: 6px;
-  padding: 8px 16px;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background: #00bfa5;
-  color: white;
-  box-shadow: 0 0 15px #00ffc3;
-}
-
-
-
-
-/* ===========================
-   Cursor Dot
-=========================== */
+/* ==========================
+   CURSOR DOT
+========================== */
 .cursor-dot {
   position: fixed;
   top: 0;
@@ -296,33 +303,39 @@ skills
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #5ef1d8; /* minty glow */
+  background: #7ef9d8;
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 1000;
-
-  box-shadow: 0 0 10px #c084fc, 
-              0 0 20px #a855f7, 
-              0 0 40px #9333ea;
+  box-shadow: 
+    0 0 10px #00ffc3,
+    0 0 20px #00bfa5,
+    0 0 40px rgba(0, 255, 204, 0.6);
 }
 
-/* ===========================
-   Responsive Layout
-=========================== */
+/* ==========================
+   FOOTER
+========================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+  color: #b2dfdb;
+  position: relative;
+  z-index: 10;
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: 1fr;
   }
+
+  nav a {
+    display: inline-block;
+    margin: 10px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
