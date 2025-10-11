@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #2e026d, #000000);
+  background: linear-gradient(135deg, #004d40, #00796b, #00bfa5);
   color: white;
   line-height: 1.6;
   overflow-x: hidden;
@@ -286,6 +286,7 @@ skills
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
