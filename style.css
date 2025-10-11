@@ -4,12 +4,26 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #2e026d, #000000);
-  color: white;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #06b6d4);
+  color: #f0f9ff;
   line-height: 1.6;
   overflow-x: hidden;
   position: relative;
 }
+
+h2, h3, strong {
+  color: #bae6fd;
+}
+
+a, .btn, .cursor-dot {
+  background: #38bdf8;
+  box-shadow: 0 0 15px #38bdf8, 0 0 30px #06b6d4;
+}
+
+a:hover, .btn:hover {
+  background: #06b6d4;
+}
+
 
 header {
   padding: 20px;
@@ -48,14 +62,10 @@ section {
 }
 
 h2 {
-  color: #c084fc;
   margin-bottom: 20px;
   text-align: center;
 }
 
-a {
-  color: #a78bfa;
-}
 
 footer {
   text-align: center;
@@ -267,7 +277,7 @@ skills
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #c084fc;
+  
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 1000;
@@ -285,6 +295,7 @@ skills
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
