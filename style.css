@@ -14,14 +14,14 @@
 
 *{box-sizing:border-box}
 html,body{height:100%}
-body{
-  margin:0;
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
-  color:var(--muted);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  line-height:1.6;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0a0f24, #001b3d, #003c5f, #00bcd4);
+  color: #e0f7fa; /* light cyan text for readability */
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
 }
 
 /* ===== layout helpers ===== */
